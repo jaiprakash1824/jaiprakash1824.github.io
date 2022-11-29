@@ -1323,8 +1323,8 @@ header .logo a {
 	top: 50%;
 	right: 50%;
 	text-align: center;
-	max-width: 90%;
-	padding: 2em 3em;
+	width: 100%;
+	/* padding: 2em 3em; */
 	-webkit-transform: translate(50%,-50%);
 	-ms-transform: translate(50%,-50%);
 	transform: translate(50%,-50%);
@@ -1364,7 +1364,7 @@ header .logo a {
 .intro-content .intro-position span {
 	display: inline-block;
 }
-.intro-content .intro-position span::after {
+/* .intro-content .intro-position span::after {
 	content: "|";
 	text-align: center;
 	display: inline-block;
@@ -1377,6 +1377,17 @@ header .logo a {
 	display: inline-block;
 	padding: 0 14px 0 8px;
 	color: rgba(255, 255, 255, 0.3);
+} */
+.intro-content .intro-position span::after {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 8px 0 14px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.intro-content .intro-position span:last-child::after {
+    display: none;
 }
 .intro-content .button {
 	color: #FFFFFF !important;
