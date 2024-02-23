@@ -1,0 +1,47 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Set the background color to black */
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.under-construction {
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  color: transparent; /* Set text color to transparent */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #FFFFFF 0%, #00BFFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.linkedin-button {
+  position: absolute;
+  top: calc(50% + 40px); /* Adjust vertical position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #0077B5; /* LinkedIn brand color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+.linkedin-button:hover {
+  background-color: #005E8A; /* Darker shade on hover */
+}
