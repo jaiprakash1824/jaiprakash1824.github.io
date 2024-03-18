@@ -1,20 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Under Construction</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/8923bd3bf0.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2KMCFCHB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7Y2KMCFCHB');
+</script> -->
 <body>
-  <div id="container"></div>
-  <h1 class="under-construction">Site is Under Construction</h1>
-  <a href="https://www.linkedin.com/in/jai-prakash-veerla" target="_blank" class="linkedin-button">LinkedIn</a>
-  <script src="script.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js'></script><script  src="./script.js"></script>
+    <div id="intro">
+  <h1 id="intro-title">Hello, I'm Jai Prakash Veerla</h1>
+  <h2 id="intro-subtitle">I'm a CS PhD candidate studying AI + HCI + Bioinformatics at UTA</h2>
+  <div id="intro-description">
+    <div id="intro-text-wrapper">
+      <p>
+      I work with <a class="link" href="https://www.uta.edu/academics/faculty/profile?username=luberj" target="_blank">Dr. Jacob Luber</a> in the <a class="link" href="https://michi.uta.edu" target="_blank">MICHI</a> -
+      <a class="link" href="https://luberlab.org" target="_blank">Health Data Science Lab</a> at <a class="link" href="https://www.uta.edu" target="_blank">UTA</a>.
+      </p>
+      <p>
+      My research focuses on <b>improving diagnostic decisions of pathologists</b> by building interactive mixed reality experiences assited by <b>AI</b> utlizing the principles of <b>HCI</b> to visualize Cancer 
+      Tumor Microenvironments using digital pathology imaging and Multi-omics data. Additionally, I also work on <b>explainability, interpretability and trustworthiness of Foundational Models in Healthcare</b>.
+      </p>
+      <p>
+      I am mentored by <a class="link" href="https://www.uta.edu/academics/faculty/profile?username=luberj" target="_blank">Dr. Jacob Luber</a>, 
+      <a class="link" href="https://hybridatelier.uta.edu/members/1-cesar-torres" target="_blank">Dr. Cesar Torres</a>, 
+      <a class="link" href="https://people.cs.umass.edu/~phuc/" target="_blank">Dr. VP Nguyen</a> and 
+      <a class="link" href="https://ranger.uta.edu/~jmeng/" target="_blank">Dr. Jiayi Meng</a>, who are members of my PhD Committee.
+      </p>
+    </div>
+    <div id="intro-headshot-wrapper">
+      <img id="intro-headshot" src="./assets/imgs/people/JaiPrakashVeerla_Square.JPEG" alt="Jai Prakash Veerla headshot" />
+      <div class="row intro-links">
+        
+          
+          
+          
+          <a class="button" href="./assets/cv/CV_Jai_Prakash_Veerla.pdf" target="_blank">
+            <div><b>CV</b></div>
+          </a>
+        
+          
+          
+          <a class="button" href="https://twitter.com/jp_veerla" target="_blank">
+            <div><i class="fa-brands fa-x-twitter"></i></div>
+          </a>
+        
+          
+          
+          
+          <a class="button" href="https://scholar.google.com/citations?user=0EHcHsgAAAAJ&hl=en" target="_blank">
+            <div><i class="fa-solid fa-graduation-cap"></i></div>
+          </a>
+        
+          
+          
+          
+          <a class="button" href="https://github.com/jaiprakash1824" target="_blank">
+            <div><i class="fa-brands fa-github"></i></div>
+          </a>
+        
+          
+          
+          
+          <a class="button" href="https://www.linkedin.com/in/jai-prakash-veerla/" target="_blank">
+            <div><i class="fa-brands fa-linkedin-in"></i></div>
+          </a>
+        
+      </div>
+      <div class="row intro-links">
+          <a class="button" id="email" href="mailto:jxv6663@mavs.uta.edu">
+            <div>jxv6663@mavs.uta.edu</div>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="news" class="section">
+  <h2 class="section-title">Recent News</h2>
+  
+  
+    <div class="news">
+      <div class="news-date">March 4, 2024</div>
+      <div class="news-title">Happy to announce that I have passed my Comprehensive Exam and became a <a>PhD Candidate</a>! &#127881;</div>
+    </div>
+  
+    <div class="news">
+      <div class="news-date">February 9, 2024</div>
+      <div class="news-title">I am happy to inform that my first author submission <a class="link" href="https://arxiv.org/abs/2401.02565" target="_blank">"Vulnerabilities Unveiled: 
+        Adversarially Attacking a Multimodal Vision Langauge Model for Pathology Imaging"</a> has been accepted for presentation at <a class="link" href="https://biomedicalimaging.org/2024/" target="_blank">
+        21<sup>st</sup> IEEE ISBI 2024</a> to be held in Athens, Greece on May 27 - 30, 2024!
+    </div>
+    </div>
+  
+    <div class="news">
+      <div class="news-date">October 13, 2023</div>
+      <div class="news-title">I'm thrilled to share that my project was shortlisted by <a class="link" href="https://machinelearning.apple.com" target="_blank">Apple</a> for 
+        <a class="link" href="https://developer.apple.com/visionos/labs/" target="_blank">Apple Vision Pro developer labs</a>! I'll be travelling to Apple Developer Center at 
+        Cupertino, California on October 27, 2023 to learn more about Apple Vision Pro &#63743;.
+      </div>
+    </div>
+  
+    <div class="news">
+      <div class="news-date">July 5, 2023</div>
+      <div class="news-title">I am happy to inform that my first author submission <a class="link" href="https://arxiv.org/abs/2307.00635" target="_blank">“Analyzing Lack of Concordance 
+        Between the Proteome and Transcriptome in Paired scRNA-Seq and Multiplexed Spatial Proteomics”</a> has been accepted as Short Paper for oral presentation at 
+        <a class="link" href="https://cmte.ieee.org/cis-bbtc/cibcb2023/" target="_blank">20<sup>th</sup> IEEE CIBCB 2023</a> 
+        to be held in Eindhoven, The Netherlands on August 29 - 31, 2023!</div>
+    </div>
+  
+    <div class="news">
+      <div class="news-date">February 21, 2023</div>
+      <div class="news-title">Happy to announce that I have passed my Diagnostic Evaluation! &#127881; </div>
+    </div>
+  
+    <div class="news">
+      <div class="news-date">August 22, 2022</div>
+      <div class="news-title">I'm starting as a PhD Student in Computer Science at The University of Texas at Arlington! &#10024; </div>
+    </div>
+  
+</div>
+
+<div id="publications" class="section">
+  <h2 class="section-title">Featured Publications</h2>
+  
+  
+  
+  <!-- Adversarial VLM -->
+  
+    <div class="publication">
+      <div class="publication-image">
+        <a href="https://arxiv.org/abs/2401.02565" target="_blank">
+          <img class="publication-img" src="./assets/imgs/thumbs/Adv_VLM_Fig1.png" alt="Adv_VLM thumbnail image." />
+        </a>
+      </div>
+      <div class="publication-info">
+        <div class="publication-detail">
+          <p class="publication-title">Vulnerabilities Unveiled: Adversarially Attacking a Multimodal Vision Language Model for Pathology Imaging</p>
+          <p class="publication-authors">
+            
+              
+              <a class="publication-author" style=" font-weight: bold " href="https://jaiprakashveerla.com">Jai Prakash Veerla*</a>
+              <span class="publication-author"> • </span>
+              
+              <a class="publication-author" style="" href="https://www.linkedin.com/in/poojitha-thota/">Poojitha Thota*</a>
+              <span class="publication-author"> • </span>
+
+              <a class="publication-author" style="" href="https://guttikondaparthasai.info">Partha Sai Guttikonda</a>
+              <span class="publication-author"> • </span>
+
+              <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=nilizadehs">Shirin Nilizadeh</a>
+              <span class="publication-author"> • </span>
+              
+              <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=luberj">Jacob M. Luber</a>
+            
+          </p>
+          <p class="publication-venue">IEEE ISBI 2024
+          
+          <!-- <p class="publication-award"><i class="fa-solid fa-award"></i> Outstanding Paper</p> -->
+          
+          </p>
+        </div>
+        <div class="publication-links row">
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/abs/2401.02565" target="_blank"><i class="fa-solid fa-link"></i> Project</a></div>
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/pdf/2401.02565.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i> Paper</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="https://www.youtube.com/watch?v=Ygyw6AQIPUo"><i class="fa-brands fa-youtube"></i> Video</a></div> -->
+          
+            <div class="button"><a class="publication-link" href="https://zenodo.org/records/1214456" target="_blank"><i class="fa-solid fa-share-nodes"></i> Dataset</a></div>
+          
+            <div class="button"><a class="publication-link" href="https://github.com/jaiprakash1824/VLM_Adv_Attack" target="_blank"><i class="fa-solid fa-code"></i> Code</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="https://news.mit.edu/2023/researchers-chart-captions-ai-vistext-0630"><i class="fa-solid fa-newspaper"></i> Press</a></div> -->
+          
+        </div>
+      </div>
+    </div>
+  
+  <!-- SpatialVisVR -->
+  
+    <div class="publication">
+      <div class="publication-image">
+        <a href="https://arxiv.org/abs/2401.02882" target="_blank">
+          <img class="publication-img" src="./assets/imgs/thumbs/ACM_TEI_Fig1.png" alt="SpatialVisVR thumbnail image." />
+        </a>
+      </div>
+      <div class="publication-info">
+        <div class="publication-detail">
+          <p class="publication-title">SpatialVisVR: An Immersive, Multiplexed Medical Image Viewer With Contextual Similar-Patient Search</p>
+          <p class="publication-authors">
+              
+            <a class="publication-author" style=" font-weight: bold " href="https://jaiprakashveerla.com" target="_blank">Jai Prakash Veerla*</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://guttikondaparthasai.info" target="_blank">Partha Sai Guttikonda</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/amir-hajighasemi-223b95185/" target="_blank">Amir Hajighasemi</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://facevoid.github.io" target="_blank">Jillur Rahman Saurav</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/aarti-darji/" target="_blank">Aarti Darji</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/cody-reynolds-049b85163/" target="_blank">Cody T. Reynolds</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/mohamed-mohamed-228a7b1a3/" target="_blank">Mohamed Mohamed</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/msnasr/" target="_blank">Mohammad S. Nasr</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/helen-shang-md-ms-22a18b145/" target="_blank">Helen H. Shang</a>
+            <span class="publication-author"> • </span>
+            
+            <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=luberj" target="_blank">Jacob M. Luber</a>
+          
+          </p>
+          <p class="publication-venue">arXiv
+          
+          </p>
+        </div>
+        <div class="publication-links row">
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/abs/2401.02882" target="_blank"><i class="fa-solid fa-link"></i> Project</a></div>
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/pdf/2401.02882.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i> Paper</a></div>
+          
+            <div class="button"><a class="publication-link" href="./assets/imgs/thumbs/MainViewer.png" target="_blank"><i class="fa-solid fa-laptop"></i> Design</a></div>
+
+            <!-- <div class="button"><a class="publication-link" href="https://www.youtube.com/watch?v=T7PtxyqRADE"><i class="fa-brands fa-youtube"></i> Video</a></div> -->
+          
+            <div class="button"><a class="publication-link" href="https://anonymous.4open.science/r/SpatialVisVR-2023/readme.md" target="_blank"><i class="fa-solid fa-code"></i> Code</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="https://news.mit.edu/2023/new-tool-helps-people-choose-right-method-evaluating-ai-models-0531"><i class="fa-solid fa-newspaper"></i> Press</a></div> -->
+          
+        </div>
+      </div>
+    </div>
+  
+  <!-- Transcriptional Bursting -->
+  
+    <div class="publication">
+      <div class="publication-image">
+        <a href="https://arxiv.org/abs/2307.00635" target="_blank">
+          <img class="publication-img" src="./assets/imgs/thumbs/Short_Paper_Fig2.png" alt="Transcriptional Bursting thumbnail image." />
+        </a>
+      </div>
+      <div class="publication-info">
+        <div class="publication-detail">
+          <p class="publication-title">Analyzing Lack of Concordance Between the Proteome and Transcriptome in Paired scRNA-Seq and Multiplexed Spatial Proteomics</p>
+          <p class="publication-authors">
+            
+              
+            <a class="publication-author" style=" font-weight: bold " href="https://jaiprakashveerla.com" target="_blank">Jai Prakash Veerla*</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://facevoid.github.io" target="_blank">Jillur Rahman Saurav</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.ansc.illinois.edu/directory/robben" target="_blank">Michael Robben</a>
+            <span class="publication-author"> • </span>
+            
+            <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=luberj" target="_blank">Jacob M. Luber</a>
+          
+            
+          </p>
+          <p class="publication-venue">IEEE CIBCB 2023
+          
+          <!-- <p class="publication-award"><i class="fa-solid fa-award"></i> Best Paper Honorable Mention</p> -->
+          
+          </p>
+        </div>
+        <div class="publication-links row">
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/abs/2307.00635" target="_blank"><i class="fa-solid fa-link"></i> Project</a></div>
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/pdf/2307.00635.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i> Paper</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="http://shared-interest.csail.mit.edu/"><i class="fa-solid fa-laptop"></i> Demo</a></div> -->
+          
+            <!-- <div class="button"><a class="publication-link" href="https://www.youtube.com/watch?v=iDVJqmj8Mlc"><i class="fa-brands fa-youtube"></i> Video</a></div> -->
+          
+            <!-- <div class="button"><a class="publication-link" href="https://www.youtube.com/watch?v=pdVCfENR-sA"><i class="fa-brands fa-youtube"></i> Preview</a></div> -->
+          
+            <div class="button"><a class="publication-link" href="https://github.com/jacobluber/TranscriptionalBursting" target="_blank"><i class="fa-solid fa-code"></i> Code</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="https://news.mit.edu/2022/does-this-artificial-intelligence-think-human-0406"><i class="fa-solid fa-newspaper"></i> Press</a></div> -->
+          
+        </div>
+      </div>
+    </div>
+  
+  <!-- NEJM AI -->
+  
+    <div class="publication">
+      <div class="publication-image">
+        <a href="https://arxiv.org/abs/2306.17019" target="_blank">
+          <img class="publication-img" src="./assets/imgs/thumbs/NEJM_AI_Fig_1.png" alt="NEJM AI thumbnail image." />
+        </a>
+      </div>
+      <div class="publication-info">
+        <div class="publication-detail">
+          <p class="publication-title">Histopathology Slide Indexing and Search: Are We There Yet?</p>
+          <p class="publication-authors">
+
+              
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/helen-shang-md-ms-22a18b145/" target="_blank">Helen H. Shang*</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/msnasr/" target="_blank">Mohammad S. Nasr*</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style=" font-weight: bold " href="https://jaiprakashveerla.com" target="_blank">Jai Prakash Veerla*</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/parisa-boodaghi-malidarreh-07646b171/" target="_blank">Parisa Boodaghi Malidarreh</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://facevoid.github.io" target="_blank">MD Jillur Rahman Saurav</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/amir-hajighasemi-223b95185/" target="_blank">Amir Hajighasemi</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=huber" target="_blank">Manfred Huber</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/chace-moleta-m-d-m-s-906861162/" target="_blank">Chace Moleta</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.uclahealth.org/providers/jitin-makker" target="_blank">Jitin Makker</a>
+            <span class="publication-author"> • </span> 
+            
+            <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=luberj" target="_blank">Jacob M. Luber</a>
+          
+            
+          </p>
+          <p class="publication-venue">NEJM AI
+          
+          <!-- <p class="publication-award"><i class="fa-solid fa-award"></i> Best Paper Honorable Mention</p> -->
+          
+          </p>
+        </div>
+        <div class="publication-links row">
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/abs/2306.17019" target="_blank"><i class="fa-solid fa-link"></i> Project</a></div>
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/pdf/2306.17019.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i> Paper</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="http://vis.csail.mit.edu/embedding-comparator/"><i class="fa-solid fa-laptop"></i> Demo</a></div> -->
+          
+            <!-- <div class="button"><a class="publication-link" href="https://www.youtube.com/watch?v=UU5LAxF8-7Q"><i class="fa-brands fa-youtube"></i> Video</a></div> -->
+          
+            <div class="button"><a class="publication-link" href="https://github.com/jacobluber/PathologySearchComparison" target="_blank"><i class="fa-solid fa-code"></i> Code</a></div>
+          
+        </div>
+      </div>
+    </div>
+  
+  <!-- F1000 Research -->
+  
+    <div class="publication">
+      <div class="publication-image">
+        <a href="https://arxiv.org/abs/2306.16989" target="_blank">
+          <img class="publication-img" src="./assets/imgs/thumbs/f1000.png" alt="F1000 Research thumbnail image." />
+        </a>
+      </div>
+      <div class="publication-info">
+        <div class="publication-detail">
+          <p class="publication-title">The State of Applying Artificial Intelligence to Tissue Imaging for Cancer Research and Early Detection</p>
+          <p class="publication-authors">
+              
+            <a class="publication-author" style="" href="https://www.ansc.illinois.edu/directory/robben" target="_blank">Michael Robben</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/amir-hajighasemi-223b95185/" target="_blank">Amir Hajighasemi</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/msnasr/" target="_blank">Mohammad Sadegh Nasr</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style=" font-weight: bold " href="https://jaiprakashveerla.com" target="_blank">Jai Prakash Veerla*</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/anne-alsup/" target="_blank">Anne M. Alsup</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/biraaj/" target="_blank">Biraaj Rout</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/helen-shang-md-ms-22a18b145/" target="_blank">Helen H. Shang</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/kelli-fowlds-249330180/" target="_blank">Kelli Fowlds</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/parisa-boodaghi-malidarreh-07646b171/" target="_blank">Parisa Boodaghi Malidarreh</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/paul-koomey/" target="_blank">Paul Koomey</a>
+            <span class="publication-author"> • </span>
+            
+            <a class="publication-author" style="" href="https://facevoid.github.io" target="_blank">MD Jillur Rahman Saurav</a>
+            <span class="publication-author"> • </span>
+            
+            <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=luberj" target="_blank">Jacob M. Luber</a>
+          
+            
+          </p>
+          <p class="publication-venue">F1000 Research
+          
+          </p>
+        </div>
+        <div class="publication-links row">
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/abs/2306.16989" target="_blank"><i class="fa-solid fa-link"></i> Project</a></div>
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/pdf/2306.16989.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i> Paper</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="https://www.youtube.com/watch?v=cJHsSEcCRYs"><i class="fa-brands fa-youtube"></i> Video</a></div> -->
+          
+            <!-- <div class="button"><a class="publication-link" href="https://github.com/roudimit/AVLnet"><i class="fa-solid fa-code"></i> Code</a></div> -->
+          
+        </div>
+      </div>
+    </div>
+  
+  <!-- MPIR -->
+  
+    <div class="publication">
+      <div class="publication-image">
+        <a href="https://arxiv.org/abs/2306.06780" target="_blank">
+          <img class="publication-img" src="./assets/imgs/thumbs/MPIR.png" alt="MPIR thumbnail image." />
+        </a>
+      </div>
+      <div class="publication-info">
+        <div class="publication-detail">
+          <p class="publication-title">Multimodal Pathology Image Search Between H&E Slides and Multiplexed Immunofluorescent Images</p>
+          <p class="publication-authors">
+            
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/amir-hajighasemi-223b95185/" target="_blank">Amir Hajighasemi</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://facevoid.github.io" target="_blank">MD Jillur Rahman Saurav</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/msnasr/" target="_blank">Mohammad S Nasr</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style=" font-weight: bold " href="https://jaiprakashveerla.com" target="_blank">Jai Prakash Veerla*</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/aarti-darji/" target="_blank">Aarti Darji</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/parisa-boodaghi-malidarreh-07646b171/" target="_blank">Parisa Boodaghi Malidarreh</a>
+            <span class="publication-author"> • </span>
+            
+            <a class="publication-author" style="" href="https://www.ansc.illinois.edu/directory/robben" target="_blank">Michael Robben</a>
+            <span class="publication-author"> • </span>
+
+            <a class="publication-author" style="" href="https://www.linkedin.com/in/helen-shang-md-ms-22a18b145/" target="_blank">Helen H. Shang</a>
+            <span class="publication-author"> • </span>
+            
+            <a class="publication-author" style="" href="https://www.uta.edu/academics/faculty/profile?username=luberj" target="_blank">Jacob M. Luber</a>
+          
+              
+            
+          </p>
+          <p class="publication-venue">arXiv
+          
+          </p>
+        </div>
+        <div class="publication-links row">
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/abs/2306.06780" target="_blank"><i class="fa-solid fa-link"></i> Project</a></div>
+          
+            <div class="button"><a class="publication-link" href="https://arxiv.org/pdf/2306.06780.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i> Paper</a></div>
+          
+            <!-- <div class="button"><a class="publication-link" href="https://www.youtube.com/watch?v=GJsHJ9j34_c"><i class="fa-brands fa-youtube"></i> Video</a></div> -->
+          
+            <div class="button"><a class="publication-link" href="https://github.com/jacobluber/MultimodalPathologySearch" target="_blank"><i class="fa-solid fa-code"></i> Code</a></div>
+          
+        </div>
+      </div>
+    </div>
+  
+  
+</div>
 
 </body>
 </html>
